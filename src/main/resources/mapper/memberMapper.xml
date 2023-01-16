@@ -16,4 +16,7 @@
     <select id="findById" parameterType="Long" resultType="member">
         select * from member_table where id=#{id}
     </select>
+    <delete id="delete" parameterType="Long">
+        delete from member_table where id=#{id}
+    </delete>
 </mapper>
